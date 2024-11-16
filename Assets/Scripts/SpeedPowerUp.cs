@@ -9,7 +9,6 @@ public class SpeedPowerUp : PowerUp
     public override void ApplyPowerUp(Player player)
     {
         player.PowerUp(speedMultiplier, duration);
-        player.SpeedTMP.text = "Speed Text :" + player.Speed;
 
     }
 }

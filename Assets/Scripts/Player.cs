@@ -47,6 +47,7 @@ public class Player : MonoBehaviour
                 speed = originalSpeed;
                 isSpeedBoostActive = false;
                 Debug.Log("Speed boost ended. Speed reset.");
+                SpeedTMP.text = "Speed Text :" + Speed;
             }
         }
     }
@@ -70,6 +71,7 @@ public class Player : MonoBehaviour
             speedBoostDuration = duration;
             speedBoostTimer = 0.0f;
             Debug.Log($"Speed increased by {speedMultiplier * 100}% for {duration} second.");
+            SpeedTMP.text = "Speed Text :" + Speed;
         }
     }
 }
